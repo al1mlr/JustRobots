@@ -1,166 +1,150 @@
 # JustRobots (v4) - Site Web Statique
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+## Description
 
-> Site web statique moderne et responsive pour JustRobots, spécialisée dans la conception et production de robots autonomes avancés pour la défense et la sécurité.
+Site web statique moderne et responsive pour JustRobots, une entreprise spécialisée dans la conception et production de robots autonomes avancés pour la défense et la sécurité.
 
-## 🚀 Aperçu
+## Fonctionnalités
 
-![JustRobots Preview](https://via.placeholder.com/800x400/1E88E5/FFFFFF?text=JustRobots+Website+Preview)
+### Design et Interface
+- **Design moderne et professionnel** avec palette de couleurs technologique
+- **Responsive design** optimisé pour mobile, tablette et desktop
+- **Navigation fluide** avec ancres et défilement doux
+- **Animations et transitions** pour une expérience utilisateur engageante
+- **Typographie moderne** avec la police Inter
 
-### 🌟 Fonctionnalités principales
+### Sections du Site
 
-- ✅ **Design moderne et professionnel** avec palette technologique
-- ✅ **Responsive design** optimisé mobile-first
-- ✅ **Navigation fluide** avec animations
-- ✅ **Performance optimisée** < 2s de chargement
-- ✅ **Accessibilité WCAG AA** complète
-- ✅ **SEO optimisé** avec métadonnées
+#### 1. Section Hero
+- Titre principal avec gradient de fond
+- Sous-titre descriptif
+- Boutons d'action avec effets de survol
+- Animation de défilement
 
-## 📱 Responsive Design
+#### 2. Section Mission
+- Description de l'entreprise "We build robots"
+- Deux marchés principaux : Défense et Sécurité
+- Cartes avec icônes et descriptions détaillées
 
-| Mobile | Tablette | Desktop |
-|--------|----------|---------|
-| 320px+ | 768px+ | 1024px+ |
+#### 3. Section Services
+- Services personnalisés
+- Mise en avant de l'expérience (10 ans)
+- Expertise en IA avancée
 
-## 🛠️ Technologies
+#### 4. Section Tunnel Rat
+- Produit phare avec image
+- Spécifications techniques détaillées
+- Grille des capacités avec icônes
+- Design en deux colonnes sur desktop
 
-- **Frontend**: HTML5, CSS3, JavaScript ES6
-- **Fonts**: Google Fonts (Inter)
-- **Icons**: SVG vectorielles
-- **Build**: Aucun build requis - site statique
+#### 5. Section Contact
+- Informations de contact avec icônes
+- Formulaire de contact fonctionnel
+- Validation côté client
 
-## 🚀 Installation rapide
+#### 6. Footer
+- Liens de navigation organisés
+- Informations de contact
+- Copyright et mentions légales
 
-```bash
-# Cloner le repository
-git clone https://github.com/username/justrobots-website.git
+### Fonctionnalités Techniques
 
-# Naviguer dans le dossier
-cd justrobots-website
+#### Responsive Design
+- **Mobile-first** : Optimisé d'abord pour mobile
+- **Breakpoints** : 768px (tablette) et 1024px (desktop)
+- **Navigation mobile** : Menu hamburger avec animation
+- **Grilles flexibles** : CSS Grid et Flexbox
 
-# Ouvrir dans le navigateur
-open index.html
-```
+#### Interactions JavaScript
+- Menu mobile interactif
+- Animations au défilement
+- Effet parallax subtil sur le hero
+- Gestion du formulaire de contact
+- Header dynamique au défilement
 
-## 📁 Structure du projet
+#### Optimisations
+- **Performance** : CSS optimisé et images compressées
+- **Accessibilité** : Contraste WCAG AA, navigation clavier
+- **SEO** : Métadonnées complètes, structure sémantique
+- **Cross-browser** : Compatible avec tous les navigateurs modernes
+
+## Structure des Fichiers
 
 ```
 justrobots-website/
-├── 📄 index.html              # Page principale
-├── 🎨 styles.css              # Feuille de style
-├── ⚡ script.js               # Interactions JavaScript
-├── 📁 images/                 # Assets visuels
-│   ├── tunnel_rat_robot.jpeg  # Image produit principal
-│   └── tech_background_*.jpg  # Arrière-plans
-├── 📖 README.md               # Documentation
-├── 📋 CONTRIBUTING.md         # Guide de contribution
-├── 📜 LICENSE                 # Licence MIT
-└── 🚫 .gitignore             # Fichiers ignorés
+├── index.html          # Page principale
+├── styles.css          # Feuille de style principale
+├── script.js           # Interactions JavaScript
+├── images/             # Dossier des images
+│   ├── tunnel_rat_robot.jpeg
+│   ├── tech_background_1.jpg
+│   ├── tech_background_2.jpg
+│   ├── tech_background_3.jpg
+│   ├── tech_background_4.jpg
+│   ├── ai_icons.jpg
+│   ├── robotics_icons.jpg
+│   ├── robot_icons.jpg
+│   └── tech_icons.jpg
+└── README.md           # Documentation
 ```
 
-## 🎨 Palette de couleurs
+## Technologies Utilisées
 
-```css
---primary-color: #1E88E5;     /* Bleu principal */
---primary-dark: #0D47A1;      /* Bleu foncé */
---accent-color: #FF6F00;      /* Orange accent */
---text-primary: #37474F;      /* Gris texte */
---background-light: #F5F5F5;  /* Arrière-plan clair */
-```
+- **HTML5** : Structure sémantique
+- **CSS3** : Design moderne avec variables CSS, Grid, Flexbox
+- **JavaScript ES6** : Interactions et animations
+- **Google Fonts** : Police Inter
+- **SVG Icons** : Icônes vectorielles pour la performance
 
-## 📋 Sections du site
+## Palette de Couleurs
 
-### 🏠 Hero Section
-- Titre principal avec gradient
-- Boutons d'action animés
-- Effet parallax subtil
+- **Bleu principal** : #1E88E5
+- **Bleu foncé** : #0D47A1
+- **Orange accent** : #FF6F00
+- **Gris texte** : #37474F
+- **Gris secondaire** : #757575
+- **Arrière-plan clair** : #F5F5F5
 
-### 🎯 Mission
-- Description de l'entreprise
-- Marchés Défense & Sécurité
-- Cartes avec icônes
+## Installation et Utilisation
 
-### 🔧 Services
-- Services personnalisés
-- 10 ans d'expérience
-- Expertise IA avancée
+1. **Télécharger** tous les fichiers dans un dossier
+2. **Ouvrir** `index.html` dans un navigateur web
+3. **Aucune installation** requise - site statique
 
-### 🤖 Tunnel Rat
-- Produit phare avec spécifications
-- Grille des capacités
-- Image produit intégrée
+## Compatibilité
 
-### 📞 Contact
-- Informations de contact
-- Formulaire fonctionnel
-- Validation côté client
+- **Navigateurs** : Chrome, Firefox, Safari, Edge (versions récentes)
+- **Appareils** : Desktop, tablette, mobile
+- **Résolutions** : De 320px à 1920px et plus
 
-## 🌐 Compatibilité navigateurs
+## Fonctionnalités d'Accessibilité
 
-| Chrome | Firefox | Safari | Edge |
-|--------|---------|--------|------|
-| ✅ 90+ | ✅ 88+ | ✅ 14+ | ✅ 90+ |
+- Contraste de couleurs conforme WCAG AA
+- Navigation au clavier
+- Textes alternatifs pour les images
+- Structure HTML sémantique
+- Support des lecteurs d'écran
 
-## ⚡ Performance
+## Performance
 
-- **Lighthouse Score**: 95+/100
-- **Temps de chargement**: < 2 secondes
-- **Images optimisées**: JPEG compressés
-- **CSS/JS minifiés**: Code optimisé
+- **Temps de chargement** : < 2 secondes
+- **Images optimisées** : Formats JPEG compressés
+- **CSS minifié** : Styles optimisés
+- **JavaScript léger** : Code minimal et efficace
 
-## ♿ Accessibilité
+## Maintenance
 
-- ✅ Contraste WCAG AA
-- ✅ Navigation clavier
-- ✅ Lecteurs d'écran
-- ✅ Textes alternatifs
-- ✅ Structure sémantique
+Le site est conçu pour être facilement maintenable :
+- Code bien structuré et commenté
+- Variables CSS pour les couleurs et espacements
+- Sections modulaires
+- Images organisées dans un dossier dédié
 
-## 🤝 Contribution
+## Contact
 
-Les contributions sont les bienvenues ! Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour commencer.
-
-### 🐛 Signaler un bug
-
-1. Vérifiez les [issues existantes](../../issues)
-2. Créez une [nouvelle issue](../../issues/new)
-3. Décrivez le problème en détail
-
-### 💡 Proposer une amélioration
-
-1. Ouvrez une [issue](../../issues/new)
-2. Décrivez votre idée
-3. Attendez les retours
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir [LICENSE](LICENSE) pour plus de détails.
-
-## 👥 Équipe
-
-- **Design & Développement**: Équipe JustRobots
-- **Contenu**: Basé sur la présentation Sway officielle
-
-## 📞 Support
-
-- 📧 Email: contact@justrobots.com
-- 📱 Téléphone: +33 1 23 45 67 89
-- 📍 Adresse: Paris, France
-
-## 🔗 Liens utiles
-
-- [Site web live](https://justrobots-website.netlify.app) (exemple)
-- [Documentation technique](docs/)
-- [Changelog](CHANGELOG.md)
+Pour toute question ou modification, contactez l'équipe de développement.
 
 ---
 
-<div align="center">
-  <strong>Fait avec ❤️ pour JustRobots</strong><br>
-  © 2025 JustRobots. Tous droits réservés.
-</div>
+© 2025 JustRobots. Tous droits réservés.
 

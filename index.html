@@ -3,348 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JustRobots - Conception et production de robots autonomes avancés pour la défense et la sécurité">
-    <meta name="keywords" content="robots, autonomes, défense, sécurité, UGV, Tunnel Rat, technologie">
-    <meta name="author" content="JustRobots">
     <title>JustRobots (v4) - Robots Autonomes Avancés</title>
+    <meta name="description" content="JustRobots - Spécialiste en conception et production de robots autonomes avancés pour la défense et la sécurité. Découvrez notre gamme complète : Tunnel Rat, Super Rat, Pivot, Série Waldo, Valkyrie, Smart Mine et plus.">
+    <meta name="keywords" content="robots autonomes, défense, sécurité, UGV, drones, IA, Tunnel Rat, Valkyrie, Aimbot">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="JustRobots (v4) - Robots Autonomes Avancés">
+    <meta property="og:description" content="Spécialiste en robots autonomes pour la défense et la sécurité">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://justrobots.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header et Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h1>JustRobots</h1>
-                    <span class="version">(v4)</span>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#mission" class="nav-link">Mission</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#tunnel-rat" class="nav-link">Tunnel Rat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-toggle" id="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JustRobots</h2>
+                <span class="version">(v4)</span>
             </div>
-        </nav>
-    </header>
-
-    <!-- Section Hero -->
-    <section class="hero" id="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="container">
-                <h1 class="hero-title">
-                    <span class="hero-title-main">JustRobots</span>
-                    <span class="hero-title-version">(v4)</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Conception et production de robots autonomes avancés pour la défense et la sécurité
-                </p>
-                <div class="hero-buttons">
-                    <a href="#mission" class="btn btn-primary">Découvrir notre mission</a>
-                    <a href="#tunnel-rat" class="btn btn-secondary">Voir nos produits</a>
-                </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#mission" class="nav-link">Mission</a></li>
+                <li><a href="#products" class="nav-link">Produits</a></li>
+                <li><a href="#technology" class="nav-link">Technologie</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-        <div class="hero-scroll">
-            <span>Défiler pour explorer</span>
-            <div class="scroll-arrow"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    L'Avenir de la <span class="gradient-text">Robotique Autonome</span>
+                </h1>
+                <p class="hero-subtitle">
+                    JustRobots conçoit et produit des robots autonomes avancés pour les marchés de la défense et de la sécurité, 
+                    intégrant l'intelligence artificielle et les technologies de pointe.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Systèmes Robotiques</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">Ans d'Expérience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Autonome</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Découvrir nos Robots</a>
+                    <a href="#contact" class="btn btn-secondary">Nous Contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/drone_operator_mission.jpeg" alt="Opérateur de drone JustRobots" class="hero-img">
+            </div>
         </div>
     </section>
 
-    <!-- Section Mission -->
-    <section class="mission" id="mission">
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Notre Mission</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="mission-content">
-                <div class="mission-main">
-                    <h3 class="mission-subtitle">We build robots</h3>
-                    <p class="mission-description">
-                        Nous concevons et produisons des robots télécommandés, portables, peu coûteux et autonomes avancés.
-                    </p>
-                </div>
-
-                <div class="mission-markets">
-                    <div class="market-card">
-                        <div class="market-icon">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
-                            </svg>
-                        </div>
-                        <h4 class="market-title">Marché de la Défense</h4>
-                        <p class="market-description">
-                            Nos produits visent à améliorer l'efficacité et la survie des combattants, en leur fournissant une technologie de multiplication de force sur le champ de bataille moderne en utilisant des UxV pilotés à distance et d'autres systèmes entièrement autonomes.
-                        </p>
-                    </div>
-
-                    <div class="market-card">
-                        <div class="market-icon">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                <circle cx="12" cy="19" r="3"/>
-                            </svg>
-                        </div>
-                        <h4 class="market-title">Marché de la Sécurité</h4>
-                        <p class="market-description">
-                            Sur le marché de la sécurité et autres marchés civils, nos produits peuvent fournir des systèmes de surveillance autonomes combinant des plateformes aériennes, terrestres ou amphibies.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Services -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Services</h2>
-                <div class="section-divider"></div>
-            </div>
-
-            <div class="services-content">
-                <div class="services-description">
-                    <p>
-                        Nous fournissons des services pour s'adapter aux besoins spécifiques des clients en combinant nos plateformes, nos sous-systèmes et des éléments tiers pour construire des robots autonomes ou semi-autonomes.
-                    </p>
-                </div>
-
-                <div class="services-features">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M9 12l2 2 4-4"/>
-                                <circle cx="12" cy="12" r="10"/>
-                            </svg>
-                        </div>
-                        <h4 class="feature-title">10 ans d'expérience</h4>
-                        <p class="feature-description">
-                            Construction et fourniture de divers robots, acquérant une connaissance approfondie de l'intégration de systèmes et une compréhension pratique de ce qui est possible ou non.
-                        </p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3 3 3 0 0 0 3-3V5a3 3 0 0 0-3-3z"/>
-                                <path d="M12 15v5"/>
-                                <path d="M8 19h8"/>
-                            </svg>
-                        </div>
-                        <h4 class="feature-title">IA Avancée</h4>
-                        <p class="feature-description">
-                            Connaissance approfondie de l'application de systèmes d'IA avancés pour fournir des comportements autonomes potentiels de premier plan.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Tunnel Rat -->
-    <section class="tunnel-rat" id="tunnel-rat">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Tunnel Rat</h2>
-                <div class="section-divider"></div>
                 <p class="section-subtitle">
-                    UGV d'exploration de tunnels/tranchées hautement mobile, léger et peu coûteux
+                    Révolutionner les opérations de défense et de sécurité grâce à des robots autonomes intelligents
+                </p>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <img src="images/robot_icons.jpg" alt="Défense" class="icon">
+                    </div>
+                    <h3>Marché Défense</h3>
+                    <p>Solutions robotiques avancées pour les forces armées, incluant reconnaissance, surveillance et opérations spéciales.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <img src="images/tech_icons.jpg" alt="Sécurité" class="icon">
+                    </div>
+                    <h3>Marché Sécurité</h3>
+                    <p>Systèmes autonomes pour la sécurité civile, la surveillance périmétrique et la protection des infrastructures critiques.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <img src="images/ai_icons.jpg" alt="Innovation" class="icon">
+                    </div>
+                    <h3>Innovation IA</h3>
+                    <p>Intégration de l'intelligence artificielle avancée avec notre logiciel Aimbot pour des capacités autonomes inégalées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Gamme de Robots</h2>
+                <p class="section-subtitle">
+                    Une famille complète de systèmes robotiques autonomes pour tous vos besoins opérationnels
                 </p>
             </div>
 
-            <div class="tunnel-rat-content">
-                <div class="tunnel-rat-image">
-                    <img src="images/tunnel_rat_robot.jpeg" alt="Robot Tunnel Rat" class="product-image">
+            <!-- Tunnel Rat Series -->
+            <div class="product-category">
+                <h3 class="category-title">Série Tunnel Rat - UGV</h3>
+                <div class="products-grid">
+                    <div class="product-card featured">
+                        <div class="product-image">
+                            <img src="images/tunnel_rat_robot.jpeg" alt="Tunnel Rat UGV" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Tunnel Rat (TRat)</h4>
+                            <p class="product-specs">Poids: 5lb (2,3 kg) | Type: UGV</p>
+                            <p>Robot terrestre compact pour reconnaissance, surveillance et opérations spéciales. Peut être équipé d'explosifs ou de systèmes Waldo.</p>
+                            <div class="product-features">
+                                <span class="feature">Caméra ISR</span>
+                                <span class="feature">Compatible Aimbot</span>
+                                <span class="feature">Modulaire</span>
+                                <span class="feature">Jetable</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/tunnel_rat_workshop.jpeg" alt="Super Rat" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Super Rat</h4>
+                            <p class="product-specs">Poids: 20lb (9 kg) | Type: UGV Avancé</p>
+                            <p>Version renforcée du Tunnel Rat avec capacités étendues et charge utile supérieure pour missions complexes.</p>
+                            <div class="product-features">
+                                <span class="feature">Charge Lourde</span>
+                                <span class="feature">Autonomie+</span>
+                                <span class="feature">Multi-mission</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="tunnel-rat-info">
-                    <div class="product-specs">
-                        <h3 class="specs-title">Spécifications Techniques</h3>
-                        <ul class="specs-list">
-                            <li>Micro UGV à chenilles, pesant moins de 10 lb</li>
-                            <li>Suffisamment robuste pour être jeté d'une fenêtre du 2ème étage</li>
-                            <li>Capable de plus de 5 km/h selon la configuration</li>
-                            <li>Fonctionne pendant plusieurs heures</li>
-                            <li>Système modulaire avec différentes configurations</li>
-                            <li>Équipement FPV ou Pixhawk, radio longue portée Doodlelabs</li>
-                            <li>GPS, caméra, ordinateur de bord avec unité de traitement tensoriel</li>
+            <!-- Amphibious Systems -->
+            <div class="product-category">
+                <h3 class="category-title">Systèmes Amphibies</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/pivot_robot.jpeg" alt="Pivot MUGV" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Pivot MUGV</h4>
+                            <p class="product-specs">Type: Multi-Use Ground Vehicle Amphibie</p>
+                            <p>Véhicule amphibie polyvalent capable d'opérations terrestres et aquatiques. Compatible avec tous les systèmes Waldo.</p>
+                            <div class="product-features">
+                                <span class="feature">Amphibie</span>
+                                <span class="feature">Multi-usage</span>
+                                <span class="feature">Compatible Waldo</span>
+                                <span class="feature">Terrain Difficile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Waldo Series -->
+            <div class="product-category">
+                <h3 class="category-title">Série Waldo - PTU (Pan-Tilt Units)</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/small_waldo.jpeg" alt="Small Waldo" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Small Waldo (SWaldo)</h4>
+                            <p class="product-specs">Poids: <5lb (2,5 kg) | Pan: 360° | Pitch: 300°</p>
+                            <p>PTU compact pour ISR avec caméra zoom mécanique et capteurs IR/thermiques. Parfait pour montage discret.</p>
+                            <div class="product-features">
+                                <span class="feature">Compact</span>
+                                <span class="feature">Zoom Mécanique</span>
+                                <span class="feature">IR/Thermique</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/medium_waldo_forest.jpeg" alt="Medium Waldo" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Medium Waldo (MWaldo)</h4>
+                            <p class="product-specs">Poids: 10-14lb (4,5-6,35 kg) | ISR+ Capable</p>
+                            <p>PTU intermédiaire pour systèmes ISR avancés et applications ISR+. Compatible avec armement léger.</p>
+                            <div class="product-features">
+                                <span class="feature">ISR Avancé</span>
+                                <span class="feature">Armement Léger</span>
+                                <span class="feature">Dahlgren Compatible</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/tech_background_1.jpg" alt="Large Waldo" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Large Waldo (LWaldo)</h4>
+                            <p class="product-specs">Poids: <18lb (8 kg) | Calibre: .308</p>
+                            <p>PTU haute performance pour armement lourd et systèmes ISR complets. Moteurs encodeurs magnétiques 24V.</p>
+                            <div class="product-features">
+                                <span class="feature">Armement Lourd</span>
+                                <span class="feature">Haute Puissance</span>
+                                <span class="feature">ISR Complet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aerial Systems -->
+            <div class="product-category">
+                <h3 class="category-title">Systèmes Aériens</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/valkyrie_drone.png" alt="Valkyrie Drone" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Valkyrie</h4>
+                            <p class="product-specs">Taille: 5" (12 cm) | Type: Quadcoptère Kamikaze</p>
+                            <p>Drone kamikaze guidé par vision avec système Aimbot intégré. Capable de reconnaissance autonome et d'engagement de cibles.</p>
+                            <div class="product-features">
+                                <span class="feature">Vision Guidée</span>
+                                <span class="feature">Aimbot Intégré</span>
+                                <span class="feature">Autonome</span>
+                                <span class="feature">Essaim Capable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Systems -->
+            <div class="product-category">
+                <h3 class="category-title">Systèmes Intelligents</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/smart_mine_ugv.png" alt="Smart Mine" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Smart Mine</h4>
+                            <p class="product-specs">Type: UGV + Aimbot | Mode: Kamikaze Intelligent</p>
+                            <p>Mine intelligente mobile utilisant Aimbot pour identification et poursuite autonome de cibles spécifiques.</p>
+                            <div class="product-features">
+                                <span class="feature">IA Embarquée</span>
+                                <span class="feature">Reconnaissance Auto</span>
+                                <span class="feature">Poursuite Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Products -->
+            <div class="product-category">
+                <h3 class="category-title">Autres Systèmes</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/badger_vehicle.png" alt="Badger Vehicle" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Badger</h4>
+                            <p class="product-specs">Type: Véhicule Tout-Terrain | Calibre: .308</p>
+                            <p>Véhicule tout-terrain avec tourelle pan/tilt capable de porter et tirer des armes jusqu'au calibre .308.</p>
+                            <div class="product-features">
+                                <span class="feature">Tout-Terrain</span>
+                                <span class="feature">Tourelle Armée</span>
+                                <span class="feature">Calibre .308</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/tech_background_2.jpg" alt="Icarus" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Icarus</h4>
+                            <p class="product-specs">Type: Quadcoptère Guidé Laser</p>
+                            <p>Drone kamikaze guidé par laser avec manœuvres anti-sniper et capacités de recherche autonome de cibles marquées.</p>
+                            <div class="product-features">
+                                <span class="feature">Guidage Laser</span>
+                                <span class="feature">Anti-Sniper</span>
+                                <span class="feature">Recherche Auto</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/tech_background_3.jpg" alt="Argos" class="product-img">
+                        </div>
+                        <div class="product-content">
+                            <h4>Argos</h4>
+                            <p class="product-specs">Type: Système Aimbot Laser</p>
+                            <p>Version d'Aimbot utilisant un détecteur quadrant pour guidage laser au lieu du système de vision traditionnel.</p>
+                            <div class="product-features">
+                                <span class="feature">Détecteur Quadrant</span>
+                                <span class="feature">Guidage Laser</span>
+                                <span class="feature">Précision+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technologie Aimbot</h2>
+                <p class="section-subtitle">
+                    Notre logiciel d'intelligence artificielle révolutionnaire au cœur de tous nos systèmes
+                </p>
+            </div>
+            <div class="tech-content">
+                <div class="tech-info">
+                    <h3>Aimbot - Vision par Ordinateur Avancée</h3>
+                    <p>Aimbot est notre logiciel propriétaire de vision par ordinateur qui utilise l'apprentissage profond pour révolutionner les capacités autonomes de nos robots.</p>
+                    
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <h4>1. Classification d'Objets</h4>
+                            <p>Identification et classification automatique des objets dans le champ de vision en temps réel.</p>
+                        </div>
+                        <div class="tech-feature">
+                            <h4>2. Suivi de Cibles</h4>
+                            <p>Suivi autonome et continu des objets sélectionnés avec prédiction de trajectoire.</p>
+                        </div>
+                        <div class="tech-feature">
+                            <h4>3. Recherche Spécialisée</h4>
+                            <p>Recherche active de classes spécifiques de cibles selon les paramètres de mission.</p>
+                        </div>
+                    </div>
+
+                    <div class="tech-specs">
+                        <h4>Spécifications Techniques</h4>
+                        <ul>
+                            <li><strong>Plateforme:</strong> Raspberry Pi 4/5 + TPU</li>
+                            <li><strong>Gimbal:</strong> 3 moteurs 30g, plateforme <250g</li>
+                            <li><strong>Applications:</strong> Valkyrie, Icarus, Smart Mine, PTUs</li>
+                            <li><strong>Modes:</strong> Autonome, Semi-autonome, Téléopéré</li>
                         </ul>
                     </div>
-
-                    <div class="product-capabilities">
-                        <h3 class="capabilities-title">Capacités du TRat</h3>
-                        <div class="capabilities-grid">
-                            <div class="capability-item">
-                                <div class="capability-icon">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                        <circle cx="12" cy="12" r="3"/>
-                                    </svg>
-                                </div>
-                                <p>Caméra embarquée pour l'ISR</p>
-                            </div>
-
-                            <div class="capability-item">
-                                <div class="capability-icon">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
-                                        <line x1="12" y1="22.08" x2="12" y2="12"/>
-                                    </svg>
-                                </div>
-                                <p>Transport du Small Waldo pour ISR et appel au feu</p>
-                            </div>
-
-                            <div class="capability-item">
-                                <div class="capability-icon">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                        <path d="M2 17l10 5 10-5"/>
-                                        <path d="M2 12l10 5 10-5"/>
-                                    </svg>
-                                </div>
-                                <p>Opération kamikaze télécommandée avec explosif</p>
-                            </div>
-
-                            <div class="capability-item">
-                                <div class="capability-icon">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3 3 3 0 0 0 3-3V5a3 3 0 0 0-3-3z"/>
-                                        <path d="M12 15v5"/>
-                                        <path d="M8 19h8"/>
-                                    </svg>
-                                </div>
-                                <p>Mine intelligente jetable avec Aimbot</p>
-                            </div>
-
-                            <div class="capability-item">
-                                <div class="capability-icon">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                    </svg>
-                                </div>
-                                <p>Couplage multiple pour exploration de tranchées/tunnels</p>
-                            </div>
-
-                            <div class="capability-item">
-                                <div class="capability-icon">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M9 12l2 2 4-4"/>
-                                        <circle cx="12" cy="12" r="10"/>
-                                    </svg>
-                                </div>
-                                <p>Mine d'embuscade intelligente avec reconnaissance de cibles</p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="tech-image">
+                    <img src="images/tunnel_rat_terrain.jpeg" alt="Technologie Aimbot" class="tech-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
-    <section class="contact" id="contact">
+    <!-- Applications Section -->
+    <section id="applications" class="applications">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Contact</h2>
-                <div class="section-divider"></div>
+                <h2 class="section-title">Applications</h2>
                 <p class="section-subtitle">
-                    Contactez-nous pour discuter de vos besoins en robotique autonome
+                    Nos robots servent dans de multiples domaines d'application
                 </p>
             </div>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h3>Applications Militaires</h3>
+                    <ul>
+                        <li>Reconnaissance et surveillance (ISR)</li>
+                        <li>Opérations en tunnels et tranchées</li>
+                        <li>Missions kamikaze guidées</li>
+                        <li>Systèmes d'armes à distance (RWS)</li>
+                        <li>Mines intelligentes et embuscades</li>
+                        <li>Opérations amphibies</li>
+                    </ul>
+                </div>
+                <div class="application-card">
+                    <h3>Applications Civiles</h3>
+                    <ul>
+                        <li>Surveillance périmétrique</li>
+                        <li>Livraison en zones difficiles</li>
+                        <li>Missions de sauvetage</li>
+                        <li>Opérations en environnements toxiques</li>
+                        <li>Surveillance d'infrastructures</li>
+                        <li>Sécurité événementielle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-Nous</h2>
+                <p class="section-subtitle">
+                    Discutons de vos besoins en robotique autonome
+                </p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>contact@justrobots.com</p>
-                        </div>
+                        <h3>Informations de Contact</h3>
+                        <p><strong>Email:</strong> contact@justrobots.com</p>
+                        <p><strong>Téléphone:</strong> +33 1 23 45 67 89</p>
+                        <p><strong>Adresse:</strong> Paris, France</p>
                     </div>
-
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Téléphone</h4>
-                            <p>+33 1 23 45 67 89</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Adresse</h4>
-                            <p>123 Avenue de la Technologie<br>75001 Paris, France</p>
-                        </div>
+                        <h3>Domaines d'Expertise</h3>
+                        <ul>
+                            <li>Robots autonomes UGV/UAV</li>
+                            <li>Intelligence artificielle embarquée</li>
+                            <li>Systèmes de vision par ordinateur</li>
+                            <li>Solutions défense et sécurité</li>
+                            <li>Développement sur mesure</li>
+                        </ul>
                     </div>
                 </div>
-
                 <div class="contact-form">
-                    <form class="form">
+                    <form id="contactForm">
                         <div class="form-group">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" id="name" name="name" class="form-input" required>
+                            <label for="name">Nom *</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-input" required>
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="subject" class="form-label">Sujet</label>
-                            <input type="text" id="subject" name="subject" class="form-input" required>
+                            <label for="company">Entreprise</label>
+                            <input type="text" id="company" name="company">
                         </div>
-
                         <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="info">Demande d'information</option>
+                                <option value="demo">Demande de démonstration</option>
+                                <option value="custom">Développement sur mesure</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="support">Support technique</option>
+                            </select>
                         </div>
-
-                        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le Message</button>
                     </form>
                 </div>
             </div>
@@ -355,48 +485,51 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
+                <div class="footer-section">
                     <h3>JustRobots (v4)</h3>
-                    <p>Robots autonomes avancés pour la défense et la sécurité</p>
+                    <p>Spécialiste en robots autonomes avancés pour la défense et la sécurité.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
                 </div>
-
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="#mission">Mission</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#tunnel-rat">Tunnel Rat</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-section">
-                        <h4>Produits</h4>
-                        <ul>
-                            <li><a href="#tunnel-rat">Tunnel Rat</a></li>
-                            <li><a href="#">Super Rat</a></li>
-                            <li><a href="#">Systèmes personnalisés</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-section">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li>contact@justrobots.com</li>
-                            <li>+33 1 23 45 67 89</li>
-                            <li>Paris, France</li>
-                        </ul>
-                    </div>
+                <div class="footer-section">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="#products">Série Tunnel Rat</a></li>
+                        <li><a href="#products">Série Waldo PTU</a></li>
+                        <li><a href="#products">Valkyrie Drone</a></li>
+                        <li><a href="#products">Smart Mine</a></li>
+                        <li><a href="#products">Pivot MUGV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li><a href="#technology">Aimbot IA</a></li>
+                        <li><a href="#technology">Vision par Ordinateur</a></li>
+                        <li><a href="#technology">Systèmes Autonomes</a></li>
+                        <li><a href="#technology">PTU Avancés</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Applications</h4>
+                    <ul>
+                        <li><a href="#applications">Défense</a></li>
+                        <li><a href="#applications">Sécurité</a></li>
+                        <li><a href="#applications">ISR</a></li>
+                        <li><a href="#applications">Surveillance</a></li>
+                    </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2025 JustRobots. Tous droits réservés.</p>
+                <p>&copy; 2025 JustRobots. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
